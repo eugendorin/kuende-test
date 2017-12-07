@@ -25,7 +25,7 @@
   - Make api calls to local db to render posts/comments
   - Filter post by 'topic_type'(discovery, social) when the buttons are clicked
   - Load just 10 post per call every time the user scrolls near the bottom of the page. Total posts -> 50
-  - Load the comments of post by 'posts_id' when the user click the posts comment button
+  - Load the comments of post by 'topic_id' when the user click the posts comment button
   - Try to show a specific ERROR message when there are no items (posts/comments) or when api error calls occur (!)
 
 ## Api Calls:
