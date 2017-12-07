@@ -20,21 +20,13 @@
     + `nodemon server/server.js` to start server on port 8000 (http://localhost:8000)
     + `json-server --watch db.json` to start json server used for api calls (https://github.com/typicode/json-server)
 
-  If you want you can use other modules or devDependencies like:
-    - Module bundler
-      + Require.js: http://requirejs.org/
-    - Task Manager
-      + Gulp: http://gulpjs.com/
-    - CSS preprocessors
-      + Stylus: http://stylus-lang.com/
-
 ## Implementation:
   - Implement the design template/style.
   - Make api calls to local db to render posts/comments
+  - Filter post by 'topic_type'(discovery, social) when the buttons are clicked
   - Load just 10 post per call every time the user scrolls near the bottom of the page. Total posts -> 50
-  - Load the posts id comments when the user click the posts comment button
-  - Filter post after: topic_type (discovery, social)
-  - Try to show specific message when there are no items (posts/comments) or when api error calls occur
+  - Load the comments of post by 'posts_id' when the user click the posts comment button
+  - Try to show a specific ERROR message when there are no items (posts/comments) or when api error calls occur (!)
 
 ## Api Calls:
   - posts (http://localhost:3000/posts)
